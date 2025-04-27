@@ -18,7 +18,7 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#e7f8fe]">
+    <main className="min-h-screen bg-white">
       {/* Header */}
       <header className="container mx-auto py-4 px-4 flex justify-between items-center">
         <div className="w-8 h-8 rounded-md bg-[#f5be30]"></div>
@@ -50,7 +50,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto py-16 px-4 text-center">
+      <section className="container mx-auto py-16 px-4 text-center bg-[#e7f8fe] ">
         <h1 className="text-4xl md:text-5xl font-bold mb-2">
           <span className="text-black">Guaranteed</span>
         </h1>
