@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e7f8fe;
+  color: #1a1a1a;
+}
+
+/* Override Material UI styles with Tailwind when needed */
+.MuiButton-root {
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.MuiAccordion-root {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.MuiAccordion-root:before {
+  display: none !important;
+}
+
+.MuiAccordionSummary-root {
+  min-height: 48px !important;
+  padding: 0 !important;
+}
+
+.MuiAccordionDetails-root {
+  padding: 0 0 16px 0 !important;
+}
+
+.MuiCardContent-root {
+  padding: 24px !important;
+}
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 24px !important;
 }
